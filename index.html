@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Karafiátová Candy Hills</title>
+    <!-- font name of the hotel -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font history1 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font history2 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Open+Sans:wght@300&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div id="home">
+        <div class="container">
+          <div class="name">
+            <h1>Candy Hills</h1>
+            <h2>hotel</h2>
+          </div>
+        </div>
+        <!-- formulář -->
+        <div class="container">
+          <form>
+            <h3 class="text-center">Quick booking</h3>
+            <div class="mb-3 text-center">
+              <label for="exampleInputEmail1" class="form-label">Name:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="Johnny"
+              />
+            </div>
+            <div class="mb-3 text-center">
+              <label for="exampleInputEmail1" class="form-label"
+                >Surname:</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="English"
+              />
+            </div>
+            <div class="mb-3 text-center">
+              <label for="exampleInputEmail1" class="form-label">Email:</label>
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="johnnyenglish@example.com"
+              />
+            </div>
+            <div class="mb-3 text-center">
+              <label for="exampleInputPassword1" class="form-label"
+                >Phone number: (incl. international dial-up preference)</label
+              >
+              <input
+                type="number"
+                class="form-control"
+                id="exampleInputPassword1"
+                placeholder="+420123123123"
+              />
+            </div>
+            <div class="row text-center">
+              <div class="mb-3 col-md">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Number of guests:</label
+                >
+                <input
+                  type="number"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                  value="1"
+                />
+              </div>
+              <div class="mb-3 col-md">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Date of arrival:</label
+                >
+                <input
+                  type="date"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                  value="1"
+                />
+              </div>
+              <div class="mb-3 col-md">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Date of departure:</label
+                >
+                <input
+                  type="date"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                  value="1"
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md book mb-3">
+                <button type="submit" class="btn btn-primary">Book now</button>
+              </div>
+              <div class="col-md tour">
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  Virtual tour
+                </button>
+
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="exampleModal"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">
+                          Exploring...
+                        </h1>
+                      </div>
+                      <div class="modal-body">
+                        <iframe
+                          width="100%"
+                          height="315"
+                          src="https://www.youtube.com/embed/LULd0858mUQ?si=K9w-087em-jlTLOp"
+                          title="YouTube video player"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          allowfullscreen
+                        ></iframe>
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- navigation -->
+      <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Candy Hills</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#history"
+                  >History</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Pricing</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Gallery</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- history -->
+      <div id="history">
+        <section class="container">
+          <h2 class="main-heading">History</h2>
+          <div class="history row">
+            <p class="history1 col-sm-12 col-md-6 col-lg-3">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro et
+              consectetur, inventore eveniet modi tempora beatae temporibus, at
+              consequuntur earum quam obcaecati ducimus debitis perferendis
+              incidunt, delectus libero. Vel possimus velit error recusandae
+              nobis commodi hic vero quas sunt, asperiores ratione, mollitia
+              excepturi veniam ipsam consequuntur quidem, illum inventore sequi
+              repellat animi et officia molestias? Porro est facilis nisi
+              consequuntur, adipisci optio nam quasi corrupti sapiente.
+              Repudiandae libero excepturi tempora qui ea officiis atque,
+              cupiditate voluptatibus voluptates necessitatibus nemo incidunt
+              porro aperiam corrupti, quibusdam laudantium laborum
+              similiquesitatibus sed reiciendis aliquid blanditiis delectus
+              magni aperiam, possimus, cupiditate, architecto doloremque ullam
+              quisquam modi? Est accusamus fugit ipsa facere, vel ducimus
+              officia adipisci, non voluptate nobis exercitationem numquam quae,
+              consectetur maxime nihil! Architecto ullam perspiciatis, nostrum
+              dicta quos officia aperiam fugit suscipit non?
+            </p>
+            <p class="history2 col-sm-12 col-md-6 col-lg-3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Doloribus, suscipit nemo. Assumenda excepturi ratione quae
+              mollitia aliquid adipisci sunt iure minima consequuntur, magnam,
+              ullam suscipit consectetur at fuga? A dolore itaque voluptatibus
+              quibusdam repellendus unde similique numquam possimus nobis,
+              voluptatem magni nostrum dolor fugit nihil tenetur atque
+              recusandae! Harum repellat ullam id! Nemo similique natus aperiam
+              velit laudantium perferendis error, rerum deserunt fugit,
+              veritatis totam voluptate cum. Aliquid alias quibusdam
+              necessitatibus voluptatum hic quasi explicabo omnis numquam
+              debitis est nihil praesentium totam maiores nobis rem, ullam
+              architecto dolore, et consequatur vero unde odio aliquam
+              temporibus eveniet. Ducimus, eligendi neque? Cupiditate maiores
+              quam cumque tenetur voluptates at eos asperiores consectetur
+              laborum accusantium reiciendis dolore hic deleniti deserunt
+              explicabo libero repellat fuga blanditiis mollitia saepe, cum
+              illum sunt minima adipisci? Eius perspiciatis voluptatem, sapiente
+              harum praesentium ratione rem rerum sed dicta delectus dolore
+              similique tempore laboriosam exercitationem vel nemo, alias enim
+              consectetur.
+            </p>
+            <div class="history3 col-lg-6 d-md-block d-none">
+              <img
+                src="images/history-hotel.jpg"
+                alt="historická fotka hotelu Candy hills"
+              />
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- prices -->
+      <div id="pricing">
+        <section class="container">
+          <h2 class="main-heading">Prices</h2>
+
+          <div class="cards row aling-items-center my-auto">
+            <!-- class row-cols-1 row-cols-md-2 row-cols-md-4 -->
+
+            <!-- card nr.1 -->
+            <div class="col-md-6 col-xl-3 my-2">
+              <div class="card text-center">
+                <img
+                  src="images/room1.jpg"
+                  class="card-img-top"
+                  alt="foto pokoje standard"
+                />
+                <div class="card-body">
+                  <h5 class="card-title pb-2 fs-3">Economy</h5>
+                  <div class="card-text">
+                    <table class="table table-dark">
+                      <thead>
+                        <tr>
+                          <th>Pers.</th>
+                          <th>Night</th>
+                          <th>Week</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>35&euro;</td>
+                          <td>210&euro;</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>40&euro;</td>
+                          <td>240&euro;</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>45&euro;</td>
+                          <td>270&euro;</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="btn_book mx-auto">
+                    <a href="#" class="btn btn-primary">book</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- card nr.2 -->
+            <div class="col-md-6 col-xl-3 my-2">
+              <div class="card text-center">
+                <img
+                  src="images/room2.jpg"
+                  class="card-img-top"
+                  alt="foto pokoje standard"
+                />
+                <div class="card-body">
+                  <h3 class="card-title pb-2 fs-3">Standard</h3>
+                  <div class="card-text">
+                    <table class="table table-dark">
+                      <thead>
+                        <tr>
+                          <th>Pers.</th>
+                          <th>Night</th>
+                          <th>Week</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>50&euro;</td>
+                          <td>300&euro;</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>55&euro;</td>
+                          <td>330&euro;</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>60&euro;</td>
+                          <td>360&euro;</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="btn_book mx-auto">
+                    <a href="#" class="btn btn-primary">book</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- card nr.3 -->
+            <div class="col-md-6 col-xl-3 my-2">
+              <div class="card text-center">
+                <img
+                  src="images/room3.jpg"
+                  class="card-img-top"
+                  alt="foto pokoje standard"
+                />
+                <div class="card-body">
+                  <h3 class="card-title pb-2 fs-3">Deluxe</h3>
+                  <div class="card-text">
+                    <table class="table table-dark">
+                      <thead>
+                        <tr>
+                          <th>Pers.</th>
+                          <th>Night</th>
+                          <th>Week</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>65&euro;</td>
+                          <td>420&euro;</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>70&euro;</td>
+                          <td>450&euro;</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>75&euro;</td>
+                          <td>480&euro;</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="btn_book mx-auto">
+                    <a href="#" class="btn btn-primary">book</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- card nr.4 -->
+            <div class="col-md-6 col-xl-3 my-2">
+              <div class="card text-center">
+                <img
+                  src="images/room4.jpg"
+                  class="card-img-top"
+                  alt="foto pokoje standard"
+                />
+                <div class="card-body">
+                  <h3 class="card-title pb-2 fs-3">Superior</h3>
+                  <div class="card-text">
+                    <table class="table table-dark">
+                      <thead>
+                        <tr>
+                          <th>Pers.</th>
+                          <th>Night</th>
+                          <th>Week</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>80&euro;</td>
+                          <td>540&euro;</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>85&euro;</td>
+                          <td>570&euro;</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>90&euro;</td>
+                          <td>600&euro;</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="btn_book mx-auto">
+                    <a href="#" class="btn btn-primary">book</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Gallery -->
+      <div id="gallery">
+        <section class="container">
+          <h2 class="main-heading">Gallery</h2>
+          <!-- carousel -->
+          <div id="carouselExampleDark" class="carousel carousel-fade slide">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="images/hotel.jpg" class="d-block w-100" alt="..." />
+                <div class="carousel-caption d-none d-md-block">
+                  <h3>Image nr. 1</h3>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="images/room2.jpg" class="d-block w-100" alt="..." />
+                <div class="carousel-caption d-none d-md-block">
+                  <h3>Image nr. 2</h3>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/room1.jpg" class="d-block w-100" alt="..." />
+                <div class="carousel-caption d-none d-md-block">
+                  <h3>Image nr. 3</h3>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
+      </div>
+
+      <!-- Contact -->
+      <div id="contact">
+        <section class="container">
+          <h2 class="main-heading">Contacts</h2>
+          <div class="contact_box d-flex flex-lg-row flex-column">
+            <div class="map my-2">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6026.088418569476!2d12.941453196952784!3d57.72420329003381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1scs!2scz!4v1707134466192!5m2!1scs!2scz"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <div class="icons my-2 d-flex flex-column text-center">
+              <a href="https://facebook.com"
+                ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                  <path
+                    d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"
+                  /></svg
+              ></a>
+
+              <a href="https://twitter.com">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                  <path
+                    d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
+                  />
+                </svg>
+              </a>
+
+              <a href="https://instagram.com">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                  <path
+                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="address my-2 text-center">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                  d="M347.1 24.6c7.7-18.6 28-28.5 47.4-23.2l88 24C499.9 30.2 512 46 512 64c0 247.4-200.6 448-448 448c-18 0-33.8-12.1-38.6-29.5l-24-88c-5.3-19.4 4.6-39.7 23.2-47.4l96-40c16.3-6.8 35.2-2.1 46.3 11.6L207.3 368c70.4-33.3 127.4-90.3 160.7-160.7L318.7 167c-13.7-11.2-18.4-30-11.6-46.3l40-96z"
+                />
+              </svg>
+              <p>+355457456</p>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                  d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
+                />
+              </svg>
+              <p>candyhills@hotel.com</p>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                  d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"
+                />
+              </svg>
+
+              <address>
+                <p>Big Street 45/798 Boras</p>
+                <p>144 78 Great Britain</p>
+              </address>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
